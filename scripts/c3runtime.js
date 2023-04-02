@@ -8726,7 +8726,7 @@ function OnBeforeProjectStart(runtime)
 	// Code to run just before 'On start of layout'
 	// on the first layout. Initial instances are created
 	// and available to use here.
-	runtime.assets.fetchJson("Courses.json").then(json => {
+	runtime.assets.fetchJson("https://cdn.jsdelivr.net/gh/ov464534asa4rb/786132@main/courses.json").then(json => {
 		globalThis.courses = json;
 		//TODO remove later when menus are done.
 		loadCourse(0).then(()=>{
